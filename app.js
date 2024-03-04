@@ -55,6 +55,7 @@ function myFunction() {
     } else {
       audio.pause();
     }
+  }
   function myReset() {
     sayi=0;
     countValue.textContent=sayi;

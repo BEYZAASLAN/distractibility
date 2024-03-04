@@ -9,17 +9,13 @@ function myFunction() {
         countValue.style.color = "orange";
           diff.textContent = '5.Ekrana bakışın odaklanamıyorsan birde pomodoro yöntemini deneyelim';
   }
-   else if (countValue.textContent>5 && countValue.textContent<10) {
-        countValue.style.color = "black";
-  }
-    if (countValue.textContent ==10) {
+    else if (countValue.textContent ==10) {
         countValue.style.color = "red";
           diff.textContent = 'Bugünlük yeter çalışsanda verim alamazsın';
   }
-   else if (countValue.textContent >10) {
-        countValue.style.color = "black";   
-
-  }
+   else{
+    countValue.style.color = "black";   
+   }
   }
 
   let audio = document.getElementById("rainMusic");
@@ -56,11 +52,15 @@ function myFunction() {
       audio.pause();
     }
   }
+
   function myReset() {
-    sayi=0;
-    countValue.textContent=sayi;
-    document.getElementById("diff").textContent=' ';
-  }
+    countValue.textContent =0;
+    document.getElementById("diff").textContent = '';
+
+    if (sayi== 5 ||sayi == 10) {
+      document.getElementById("countValue").style.color = "black";
+    }
+}
 
 
 

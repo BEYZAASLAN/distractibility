@@ -18,6 +18,9 @@ function myFunction() {
    }
   }
 
+
+
+
 /*   let audio = document.getElementById("rainMusic");
   function toggleMusic() {
     if (audio.paused) {
@@ -51,9 +54,12 @@ function myFunction() {
     } else {
       audio.pause();
     }
-  } */                  /*TEK FONK İLE HEPSİNİ HALLETTİM EHEHEHEHHEHEE  */
+  } */                
+  
+  
+  /*TEK FONK İLE HEPSİNİ HALLETTİM EHEHEHEHHEHEE  */
 
-  function toggleMusic(X){
+  function Music(X){
     const idsineulas = `music${X}`;
     const idninicinegir = document.getElementById(idsineulas);
     if (idninicinegir.paused) {  /* paused durmus */
@@ -63,10 +69,12 @@ function myFunction() {
     }
   }
   
+
   function myReset() {
+    const countValue = document.getElementById("countValue");
+    let  sayi = parseInt(countValue.textContent);
     countValue.textContent =0;
     document.getElementById("diff").textContent = '';
-
     if (sayi== 5 ||sayi == 10) {
       document.getElementById("countValue").style.color = "black";
     }
